@@ -9,3 +9,8 @@ const (
 	OpTrackStuckEvent      EventType = "TrackStuckEvent"
 	OpWebSocketClosedEvent EventType = "WebSocketClosedEvent"
 )
+
+type BaseEvent struct {
+	Type    EventType `json:"type"`
+	GuildID string    `json:"guildId"`
+}

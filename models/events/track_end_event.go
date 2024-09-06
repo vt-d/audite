@@ -13,8 +13,6 @@ const (
 )
 
 type TrackEndEvent struct {
-	Type         EventType `json:"type"`
-	GuildID      string    `json:"guildId"`
 	models.Track `json:"track"`
 	Reason       TrackEndReason `json:"reason"`
 }
