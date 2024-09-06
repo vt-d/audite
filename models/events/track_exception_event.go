@@ -17,6 +17,8 @@ type Exception struct {
 }
 
 type TrackExceptionEvent struct {
+	Type         EventType `json:"type"`
+	GuildID      string    `json:"guildId"`
 	models.Track `json:"track"`
 	Exception    `json:"exception"`
 }

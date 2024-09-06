@@ -3,5 +3,7 @@ package events
 import "github.com/vt-d/audite/models"
 
 type TrackStartEvent struct {
-	Track models.Track `json:"track"`
+	Type    EventType    `json:"type"`
+	GuildID string       `json:"guildId"`
+	Track   models.Track `json:"track"`
 }
